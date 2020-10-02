@@ -27,9 +27,8 @@ namespace ConsoleAppTask1
             //int value = Convert.ToInt32(Console.ReadLine());
 
             double TC = Math.Round((T - 32) * 5 / 9);
-
             Console.WriteLine($"Temperature F : {TC}");
-            // Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
