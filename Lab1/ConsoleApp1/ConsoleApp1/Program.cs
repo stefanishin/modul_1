@@ -15,14 +15,14 @@ namespace ConsoleApp1
             //Console.Write("Enter F: ");
             //int T = int.Parse(Console.ReadLine());
 
-            ////int value = Convert.ToInt32(Console.ReadLine());
-            ////string str = Console.ReadLine();
-            ////int value = Convert.ToInt32(str);
-            ////int value = Convert.ToInt32(Console.ReadLine());
+            //int value = Convert.ToInt32(Console.ReadLine());
+            //string str = Console.ReadLine();
+            //int value = Convert.ToInt32(str);
+            //int value = Convert.ToInt32(Console.ReadLine());
 
             //int TC = (T - 32) * 5 / 9;
             //Console.WriteLine($"Temperature F : {TC}");
-            //// Console.ReadKey();
+            //Console.ReadKey();
 
             ////Задание 2.Даны координаты трех вершин треугольника: (x1, y1), (x2, y2), (x3, y3).
             ////Найти его периметр и площадь
@@ -66,8 +66,8 @@ namespace ConsoleApp1
             ////данного числа, например: 256 — «двести пятьдесят шесть», 814 — «восемьсот
             ////четырнадцать».
 
-            //Преобразует указанное строковое представление числа в эквивалентное 32-битовое целое число со знаком.
-            // int n = Convert.ToInt32(s);
+            //   Преобразует указанное строковое представление числа в эквивалентное 32 - битовое целое число со знаком.
+            //  int n = Convert.ToInt32(s);
             //int z;
             //do
             //{
@@ -81,7 +81,7 @@ namespace ConsoleApp1
             //    }
 
 
-            //    //string s = null;
+            //    string s = null;
 
             //    int d = n / 100; // сотни
             //    int d1 = n % 100;//остатки
@@ -131,7 +131,7 @@ namespace ConsoleApp1
             //}
             //while (z == 1);
 
-
+            //-----
             // Задание 4. Даны целые положительные числа A, B, C. 
             //Значение этих чисел программа должна запрашивать у пользователя.
             //На прямоугольнике размера A *B размещено максимально возможное количество квадратов со стороной C.
@@ -142,7 +142,7 @@ namespace ConsoleApp1
 
 
             //Console.WriteLine("Enter А: ");
-            //int A= int.Parse(Console.ReadLine());
+            //int A = int.Parse(Console.ReadLine());
             //Console.WriteLine("Enter B: ");
             //int B = int.Parse(Console.ReadLine());
 
@@ -153,22 +153,22 @@ namespace ConsoleApp1
             //{
             //    Console.WriteLine(" Значения  больше данных - ");
             //    Console.WriteLine("Enter А: ");
-            //     A = int.Parse(Console.ReadLine());
+            //    A = int.Parse(Console.ReadLine());
             //    Console.WriteLine("Enter B: ");
-            //     B = int.Parse(Console.ReadLine());
+            //    B = int.Parse(Console.ReadLine());
 
             //    Console.WriteLine("Enter C: ");
-            //     C = int.Parse(Console.ReadLine());
+            //    C = int.Parse(Console.ReadLine());
             //} while (C > A || C > B);
-
 
             //int d1 = A / C;
             //int d2 = B / C;
             //int kl = d1 * d2;// количество прямоугольничков
             //int S = B * (A % C) + A * (B % C); //свободная площадь прямоугольника
-            //Console.WriteLine($"Количество прямоугольничков - {kl} " );
+            //Console.WriteLine($"Количество прямоугольничков - {kl} ");
             //Console.WriteLine($"Свободная площадь прямоугольника - {S}");
             //Console.ReadKey();
+
             //---
             //Задание 5. Начальный вклад в банке равен 1000 руб.Через каждый месяц размер вклада увеличивается на P процентов от имеющейся суммы.
             //По данному P определить, через сколько месяцев размер вклада превысит 1100 руб., и вывести
@@ -187,10 +187,16 @@ namespace ConsoleApp1
                 Console.WriteLine($"Капитал должен достигнуть суммы:");
                 double s = double.Parse(Console.ReadLine()); m = 0;
                 if (k == s && k != 0 && s != 0) { Console.WriteLine("\nКапитал равен необходимой сумме, жизнь удалась!"); }
-                if (k > s) { Console.WriteLine("\nКапитал больше необходимой суммы, банкомат в шоке!");
-                    Console.ReadLine(); Console.Clear(); goto m1; }
-                if (k <= 0 || p <= 0 || s < 0) { Console.WriteLine("\nОкей, поигрались, а теперь давай реальные данные!");
-                    Console.ReadLine(); Console.Clear(); goto m1; }
+                if (k > s)
+                {
+                    Console.WriteLine("\nКапитал больше необходимой суммы, банкомат в шоке!");
+                    Console.ReadLine(); Console.Clear(); goto m1;
+                }
+                if (k <= 0 || p <= 0 || s < 0)
+                {
+                    Console.WriteLine("\nОкей, поигрались, а теперь давай реальные данные!");
+                    Console.ReadLine(); Console.Clear(); goto m1;
+                }
                 while (k < s)
                 {
                     m++;
@@ -199,7 +205,7 @@ namespace ConsoleApp1
                     kopc = (k - grn) * 100;
                     kop = (long)kopc;
                     Console.Write($" {m} ");
-                    if (m % 100 > 10 && m % 100 < 15) Console.Write($" месяцев"); 
+                    if (m % 100 > 10 && m % 100 < 15) Console.Write($" месяцев");
                     else
                     {
                         switch (m % 10)
@@ -237,7 +243,7 @@ namespace ConsoleApp1
 
                 }
                 Console.WriteLine($"\n\nТекущая сумма будет достигнута через {m} ");
-            
+
                 if (m % 100 > 10 && m % 100 < 15) Console.Write(" месяцев");
                 else
                 {
@@ -245,139 +251,20 @@ namespace ConsoleApp1
                     {
                         case 0: case 5: case 6: case 7: case 8: case 9: Console.Write(" месяцев"); break;
                         case 1: Console.Write(" месяц"); break;
-                        case 2: case 3: case 4: Console.Write(" месяцa");  break;
+                        case 2: case 3: case 4: Console.Write(" месяцa"); break;
                     }
                 }
+                Console.WriteLine($"");
                 Console.WriteLine("\nПрограмма была успешно выполнена. Желаете перезапустить? (1/0)");
 
                 x = int.Parse(Console.ReadLine());
                 Console.ReadLine(); Console.Clear();
             }
             while (x == 1);
-           
+
         }
     }
 }
 
 
 
-
-
-//Задание 5. Начальный вклад в банке равен 1000 руб.Через каждый месяц размер вклада увеличивается на P процентов от имеющейся суммы.
-//По данному P определить, через сколько месяцев размер вклада превысит 1100 руб., и вывести
-//найденное количество месяцев K и итоговый размер вклада S.
-
-
-
-
-//#include <iostream.h>
-//#include<conio.h>
-//main()
-//{
-//    double k, p, s, m;
-//    long l;
-//    int l1, rub;
-//    clrscr();
-//    cout << "komersant imeet startovii kapital k , kotor.kajdii mesyac uvelichivaetsya na p- procentof ejemesya4no, sobiraet summu s. Vivesti ejemesya4noe zna4enie kapitala poka ne budet dostignuta summa s";
-
-//m1: cout << "\nVV. k,p,s\n"; cin >> k >> p >> s;
-//    m = 0;
-//    while (k < s)
-//    {
-//        m++;
-//        k = k + k * p / 100;
-//        rub = k;
-//        l = (k - rub) * 100;
-
-//        l1 = l;
-//        cout << m << " m_ " << rub << " rub " << l1 << " kop\n";
-//    }
-//    cout << "\nkapital dostignet nujnoy summi cherez " << m << " mes";
-
-//    cout << "\nOne More? (1/0)"; cin >> k;
-//    if (k == 1) { goto m1; }
-//    return 0;
-//}
-//#include <iostream.h>
-//#include <conio.h>
-//#include <locale.h>
-//#include <math.h>
-
-//main()
-//{
-//    setlocale(0, "");
-//    double x, s, k, p, kopc; long rub, kop, m;
-
-//    do
-//    {
-//    m1: cout << "FMF SPSU 103 gr., Lysenco\n";
-//        cout << "Коммерсант считает прибыль\nИтак, у него есть стартовый капитал, в рублях ПМР: ";
-//        cin >> k;
-//        cout << "Капитал будет ежемесячно увеличиваться на, процентов: ";
-//        cin >> p;
-//        cout << "Капитал должен достигнуть суммы: ";
-//        cin >> s; m = 0;
-//        if (k == s && k != 0 && s != 0) { cout << "\nКапитал равен необходимой сумме, жизнь удалась!"; }
-//        if (k > s) { cout << "\nКапитал больше необходимой суммы, банкомат в шоке!"; getch(); clrscr(); goto m1; }
-//        if (k <= 0 || p <= 0 || s < 0) { cout << "\nОкей, поигрались, а теперь давай реальные данные!"; getch(); clrscr(); goto m1; }
-//        while (k < s)
-//        {
-//            m++;
-//            k = k + k * p / 100;
-//            rub = k;
-//            kopc = (k - rub) * 100;
-//            kop = kopc;
-//            cout << "\n" << m;
-//            if (m % 100 > 10 && m % 100 < 15) cout << " месяцев";
-//            else
-//            {
-//                switch (m % 10)
-//                {
-//                    case 0: case 5: case 6: case 7: case 8: case 9: cout << " месяцев"; break;
-//                    case 1: cout << " месяц  "; break;
-//                    case 2: case 3: case 4: cout << " месяца "; break;
-//                }
-//            }
-//            cout << " = " << rub;
-//            if (rub % 100 > 10 && rub % 100 < 15) cout << " рублей";
-//            else
-//            {
-//                switch (rub % 10)
-//                {
-//                    case 0: case 5: case 6: case 7: case 8: case 9: cout << " рублей"; break;
-//                    case 1: cout << " рубль "; break;
-//                    case 2: case 3: case 4: cout << " рубля "; break;
-//                }
-//            }
-//            cout << " " << kop;
-//            if (kop % 100 > 10 && kop % 100 < 15) cout << " копеек";
-//            else
-//            {
-//                switch (kop % 10)
-//                {
-//                    case 0: case 5: case 6: case 7: case 8: case 9: cout << " копеек"; break;
-//                    case 1: cout << " копейкa"; break;
-//                    case 2: case 3: case 4: cout << " копейки"; break;
-//                }
-//            }
-
-
-//        }
-//        cout << "\n\nТекущая сумма будет достигнута через " << m;
-//        if (m % 100 > 10 && m % 100 < 15) cout << " месяцев";
-//        else
-//        {
-//            switch (m % 10)
-//            {
-//                case 0: case 5: case 6: case 7: case 8: case 9: cout << " месяцев"; break;
-//                case 1: cout << " месяц"; break;
-//                case 2: case 3: case 4: cout << " месяца"; break;
-//            }
-//        }
-
-//        cout << "\n\nПрограмма была успешно выполнена. Желаете перезапустить?\n(1/0)";
-//        cin >> x; clrscr();
-//    }
-//    while (x == 1);
-//    return 0;
-//}

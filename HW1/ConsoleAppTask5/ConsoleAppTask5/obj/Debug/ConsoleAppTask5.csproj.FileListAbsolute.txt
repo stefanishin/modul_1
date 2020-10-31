@@ -1,0 +1,6 @@
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask5\ConsoleAppTask5\bin\Debug\ConsoleAppTask5.exe.config
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask5\ConsoleAppTask5\bin\Debug\ConsoleAppTask5.exe
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask5\ConsoleAppTask5\bin\Debug\ConsoleAppTask5.pdb
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask5\ConsoleAppTask5\obj\Debug\ConsoleAppTask5.csproj.CoreCompileInputs.cache
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask5\ConsoleAppTask5\obj\Debug\ConsoleAppTask5.exe
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask5\ConsoleAppTask5\obj\Debug\ConsoleAppTask5.pdb

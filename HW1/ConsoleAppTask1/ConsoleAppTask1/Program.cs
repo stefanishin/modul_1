@@ -14,12 +14,13 @@ namespace ConsoleAppTask1
     {
         static void Main(string[] args)
         {
-            int spaceSymbol = 0;
+         
             char symbol;
             Console.WriteLine("Программа для подсчета пробелов! ");
+            int k = 0;
             do
             {
-                Console.WriteLine("Введите символ");
+                Console.WriteLine("введите последовательность символ");
                 Console.WriteLine("Нажмите кнопку точку,  для выхода из циклов");
                 symbol = Console.ReadKey().KeyChar;                
                 Console.Clear();
@@ -27,15 +28,13 @@ namespace ConsoleAppTask1
                 Console.WriteLine(symbol);
                 if (symbol == ' ')
                 {
-                    Console.WriteLine("Пробел");
-                    spaceSymbol++;
-                    Console.WriteLine($"Количество введенных пробелов = {spaceSymbol}");
+                    k++;
+                    Console.WriteLine("Пробел");                    
+                    Console.WriteLine($"Количество введенных пробелов = {k}");
                 }
-                //if (symbol.KeyChar != '.')
-                //{
-                //    break;
-                //}
+                
             } while (symbol != '.');
+            Console.WriteLine($"Kоличество пробелов: {k}");
         }
     }
 }

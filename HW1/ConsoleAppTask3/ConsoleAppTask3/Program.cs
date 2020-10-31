@@ -17,7 +17,32 @@ namespace ConsoleAppTask3
     class Program
     {
         static void Main(string[] args)
-        {
+        {           
+            ConsoleKeyInfo s;
+            do
+            {
+                Console.WriteLine(" Введите символ для конвертации регистратора ");
+                Console.WriteLine("Конец ввода - ESC");
+                s = Console.ReadKey();
+                Console.WriteLine();
+
+                Console.WriteLine("Введенный символ - " + s.KeyChar);
+                if (char.IsLetter(Convert.ToChar(s.KeyChar)))
+                {
+                    if (char.IsUpper(Convert.ToChar(s.KeyChar)))
+                    {
+                        Console.WriteLine("Конвертируемый символ - " + char.ToLower(Convert.ToChar(s.KeyChar)));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Конвертируемый символ - " + char.ToUpper(Convert.ToChar(s.KeyChar)));
+                    }
+                }
+                if (Convert.ToInt32(s.KeyChar) == 28)
+                {
+                    break;
+                }
+            } while (true);
         }
     }
 }

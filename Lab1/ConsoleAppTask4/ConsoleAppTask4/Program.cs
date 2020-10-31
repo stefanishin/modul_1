@@ -19,6 +19,33 @@ namespace ConsoleAppTask4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter А: ");
+            int A = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter B: ");
+            int B = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter C: ");
+            int C = int.Parse(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine(" Значения  больше данных - ");
+                Console.WriteLine("Enter А: ");
+                A = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter B: ");
+                B = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter C: ");
+                C = int.Parse(Console.ReadLine());
+            } while (C > A || C > B);
+
+            int d1 = A / C;
+            int d2 = B / C;
+            int kl = d1 * d2;// количество прямоугольничков
+            int S = B * (A % C) + A * (B % C); //свободная площадь прямоугольника
+            Console.WriteLine($"Количество прямоугольничков - {kl} ");
+            Console.WriteLine($"Свободная площадь прямоугольника - {S}");
+            Console.ReadKey();
         }
     }
 }

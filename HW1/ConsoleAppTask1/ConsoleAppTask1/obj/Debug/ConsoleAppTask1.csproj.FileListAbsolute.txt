@@ -1,0 +1,7 @@
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask1\ConsoleAppTask1\bin\Debug\ConsoleAppTask1.exe.config
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask1\ConsoleAppTask1\bin\Debug\ConsoleAppTask1.exe
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask1\ConsoleAppTask1\bin\Debug\ConsoleAppTask1.pdb
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask1\ConsoleAppTask1\obj\Debug\ConsoleAppTask1.csprojAssemblyReference.cache
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask1\ConsoleAppTask1\obj\Debug\ConsoleAppTask1.csproj.CoreCompileInputs.cache
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask1\ConsoleAppTask1\obj\Debug\ConsoleAppTask1.exe
+D:\OneDrive - ITSTEP\C#\Урок1_Введение в платформу MS_NET и ЯП\modul_1\HW1\ConsoleAppTask1\ConsoleAppTask1\obj\Debug\ConsoleAppTask1.pdb
